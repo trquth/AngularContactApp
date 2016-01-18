@@ -4,7 +4,7 @@ app.controller('ContactController', function($scope, advancepagingservice) {
 	$scope.pages = advancepagingservice.pages;
 	$scope.info = advancepagingservice.paging.info;
 	$scope.options = advancepagingservice.paging.options;
-	$scope.navigate = navigate;
+	$scope.navigate = advancepagingservice.navigate;
 	$scope.status = {
 		type: "info",
 		message: "ready",
